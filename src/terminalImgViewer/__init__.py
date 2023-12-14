@@ -8,10 +8,12 @@ def display(image_name, width):
     im = reduce_resolution(Image.open(image_name).getdata().convert("RGB"), width)
     result = ""
 
-    for i in range(0, len(im)):
-        color = fg('#%02x%02x%02x' % im[i])
-        if i % im.size[0] == 0 and i != 0:
+    for i, pixel in enumerate(im):
+        
+        color = fg('#%02x%02x%02x' % pixel)
+        result += color + CHAR * 2
+
+        if (i + 1) % im.size[0] == 0:
             result += "\n"
-        else:
-            result += color + CHAR * 2
+
     print(result)
