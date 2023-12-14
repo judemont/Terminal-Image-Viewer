@@ -1,10 +1,10 @@
 [project]
 name = "terminalImgViewer"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
   { name="Judemont", email="julien@rmbi.ch" },
 ]
-description = "Python library to display images in the terminal"
+description = "A python python package to display images in your terminal, with colored characters."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
