@@ -9,7 +9,6 @@ def display(image_name, width):
     result = ""
 
     for i, pixel in enumerate(im):
-        
         color = fg('#%02x%02x%02x' % pixel)
         result += color + CHAR * 2
 
