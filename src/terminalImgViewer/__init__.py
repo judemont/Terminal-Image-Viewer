@@ -4,8 +4,8 @@ from terminalImgViewer.lib import reduce_resolution
 
 CHAR = "■"
 
-def display(image_name, width):
-    im = reduce_resolution(Image.open(image_name).getdata().convert("RGB"), width)
+def getTerminalImage(image_path: string, width: int) -> string:
+    im = reduce_resolution(Image.open(image_path).getdata().convert("RGB"), width)
     result = ""
 
     for i, pixel in enumerate(im):
@@ -15,4 +15,4 @@ def display(image_name, width):
         if (i + 1) % im.size[0] == 0:
             result += "\n"
 
-    print(result)
+    return result
