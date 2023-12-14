@@ -4,7 +4,7 @@ from terminalImgViewer.lib import reduce_resolution
 
 CHAR = "■"
 
-def getTerminalImage(image_path: string, width: int) -> string:
+def getTerminalImage(image_path: str, width: int) -> str:
     im = reduce_resolution(Image.open(image_path).getdata().convert("RGB"), width)
     result = ""
 
