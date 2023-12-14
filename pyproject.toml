@@ -1,0 +1,18 @@
+[project]
+name = "terminalImgViewer"
+version = "0.0.4"
+authors = [
+  { name="Judemont", email="julien@rmbi.ch" },
+]
+description = "Python library to display images in the terminal"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/judemont/terminalImgViewer"
+Issues = "https://github.com/judemont/terminalImgViewer/issues"
